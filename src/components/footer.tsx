@@ -88,13 +88,13 @@ export function Footer() {
               <p className="text-sm text-muted-foreground mb-4">
                 Stay updated on new releases and features, guides, and case studies.
               </p>
-              <div className="flex gap-2">
+              <div className="flex gap-1">
                 <input
                   type="email"
                   placeholder="Enter your email"
-                  className="flex-1 px-3 py-2 border border-border rounded-md bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                  className=" py-2 border border-border rounded-md bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
                 />
-                <button className="px-4 py-2 bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors">
+                <button className="px-2 py-2 bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors">
                   Subscribe
                 </button>
               </div>
