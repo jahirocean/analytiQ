@@ -145,3 +145,14 @@
             -webkit-text-fill-color: transparent;
             background-image: linear-gradient(to right, var(--tw-gradient-stops));
         }
+
+        .line-clamp-3 {
+            /* Fallback for older browsers (not strictly required but good practice) */
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            /* Specifies the number of lines */
+            -webkit-line-clamp: 3;
+            line-clamp: 3; /* Standard property */
+            text-overflow: ellipsis;
+        }

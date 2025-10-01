@@ -1,4 +1,4 @@
-import { features } from "@/lib/constants";
+import { features, projects } from "@/lib/constants";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -36,32 +36,31 @@ export default function DocsPage() {
           </div>
         </div>
       </section>
-
-
   
 
       {/* Projects */}
       <section className="mx-auto max-w-7xl px-6 py-12 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {features.map((feature, index) => (
+          {projects.map((project, index) => (
             <div key={index} className="group relative bg-background overflow-hidden rounded-2xl shadow-sm border border-border hover:shadow-md transition-all duration-300 hover:-translate-y-1">
               <Image
-                width={300}
-                height={250}
-                className="w-full h-48 object-cover"
-                src="/fff.png"
+                width={500}
+                height={300}
+                
+                className="object-cover"
+                src={project.img}
                 alt="Placeholder image"
               />
 
               <div className="p-6">
-                <h3 className="mt-4 text-lg font-semibold text-foreground">
-                  {feature.name}
+                <h3 className="mt-4 text-2xl font-semibold line-clamp-2 text-foreground">
+                  {project.title}
                 </h3>
-                <p className="mt-2 mb-4 text-sm text-muted-foreground leading-relaxed">
-                  {feature.description}
+                <p className="mt-2 mb-4 text-sm line-clamp-2 text-muted-foreground leading-relaxed">
+                  {project.description}
                 </p>
 
-                <Link href="#" className="text-green-500 hover:text-green-600 text-sm font-medium">
+                <Link href={project.href} className="text-green-500 hover:text-green-600 text-sm font-medium">
             Read more →
           </Link>
               </div>

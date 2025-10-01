@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Mail, Phone, MapPin, Send, CheckCircle } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function ContactFormPage() {
   const [formData, setFormData] = useState({
@@ -275,9 +276,7 @@ export default function ContactFormPage() {
             <div>
               <h2 className="text-3xl font-bold mb-6">Get in touch</h2>
               <p className="text-lg text-gray-700 mb-8">
-                We're here to help you transform your business with cutting-edge
-                technology solutions. Reach out to us and let's start the
-                conversation.
+                Ready to improve your research and business? We can help with smart technology solutions. Let's talk.
               </p>
 
               <div className="space-y-6">
@@ -287,8 +286,8 @@ export default function ContactFormPage() {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold mb-1">Email Us</h3>
-                    <p className="text-gray-600">info@luxoft.com</p>
-                    <p className="text-gray-600">sales@luxoft.com</p>
+                    <p className="text-gray-600">info@analytiq.com</p>
+                    <p className="text-gray-600">sales@analytiq.com</p>
                   </div>
                 </div>
 
@@ -298,8 +297,8 @@ export default function ContactFormPage() {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold mb-1">Call Us</h3>
-                    <p className="text-gray-600">+1 (555) 123-4567</p>
-                    <p className="text-gray-600">+1 (555) 987-6543</p>
+                    <p className="text-gray-600">+880 1871489154</p>
+                    <p className="text-gray-600">+880 1560057697</p>
                   </div>
                 </div>
 
@@ -378,12 +377,12 @@ export default function ContactFormPage() {
             Join thousands of companies that trust Luxoft for their digital
             transformation needs
           </p>
-          <a
+          <Link
             href="#contact-form"
             className="btn-primary bg-white text-blue-600 hover:bg-gray-100 rounded-full py-3 px-6 font-medium transition-colors"
           >
             Contact Us Today
-          </a>
+          </Link>
         </div>
       </section>
     </div>
